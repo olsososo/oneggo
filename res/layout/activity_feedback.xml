@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2">
+    
+    <RelativeLayout 
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:background="@color/v1_actionbar" 
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <Button 
+            android:id="@+id/back" 
+            android:layout_centerVertical="true" 
+            android:layout_marginLeft="@dimen/menu_margin_left" 
+            android:paddingLeft="@dimen/menu_margin_left" 
+            android:textSize="@dimen/menu_back_text" 
+            android:textColor="@color/v1_menu_back_text"  
+            android:background="@drawable/selector_btn_back" 
+            android:layout_width="@dimen/menu_back_width" 
+            android:layout_height="@dimen/menu_back_height" 
+            android:text="@string/back" />
+        <TextView 
+            android:layout_centerInParent="true" 
+            android:textSize="@dimen/menu_title" 
+            android:textColor="@color/v1_menu_title"  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/i_want_tucao" />
+        
+   </RelativeLayout>
+   
+   <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_bg1" >
+        
+        <Button
+        android:id="@+id/send"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext1"
+        android:textSize="14sp"
+        android:textColor="@color/v1_hint"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="@string/send" />
+         
+        
+        <EditText
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/send"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext1"
+        android:hint="@string/i_want_say"
+        android:textColor="@color/v1_hint"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+    </RelativeLayout>
+    
+   <LinearLayout
+       android:id="@+id/loading"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/menu"
+	   android:gravity="center_horizontal"
+	   android:orientation="vertical"
+	   android:layout_marginTop="30dp"
+       >
+       
+       <ProgressBar 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@android:style/Widget.ProgressBar.Inverse"
+           />
+       
+       <TextView 
+           android:layout_marginTop="10dp"
+  		   android:layout_width="wrap_content"
+  		   android:layout_height="wrap_content"
+  		   android:text="@string/load_data"
+  		   android:textColor="@color/v1_hint"
+  		   android:textSize="14sp"         
+           />
+   </LinearLayout>
+   
+	<android.support.v4.widget.SwipeRefreshLayout
+	    android:id="@+id/swipe_container"
+		android:layout_marginLeft="10.0dip" 
+		android:layout_marginRight="10.0dip"
+		android:layout_below="@id/menu"
+		android:layout_above="@id/bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <ListView
+		    android:id="@+id/listView"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:divider="@null"
+		    android:dividerHeight="5dp"
+		    android:scrollbars="none"
+		    android:cacheColorHint="#00000000"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

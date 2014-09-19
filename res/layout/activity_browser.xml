@@ -1,0 +1,129 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:id="@+id/menu"
+        android:background="@color/v1_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        
+		<Button 
+		    android:id="@+id/back"
+		    android:contentDescription="@null"
+		    android:layout_width="@dimen/menu_back_width"
+		    android:layout_height="@dimen/menu_back_height"
+            android:textSize="@dimen/menu_back_text" 
+            android:textColor="@color/v1_menu_back_text"
+            android:text="@string/back"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/selector_btn_back"
+		    android:layout_marginLeft="@dimen/menu_margin_left"
+		    />
+		
+		<ImageView 
+		    android:layout_width="32dp"
+		    android:layout_height="32dp"
+		    android:id="@+id/like"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@+id/share"
+		    android:src="@drawable/like_selector"
+		    android:layout_marginRight="10dp"
+		    android:contentDescription="@null"
+		    />
+		
+		<ImageView 
+		    android:layout_width="32dp"
+		    android:layout_height="32dp"
+		    android:id="@+id/share"
+		    android:src="@drawable/share"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:contentDescription="@null"
+		    />     
+		    
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="2px"
+		    android:background="@color/v1_actionbar_line"
+		    android:layout_alignParentBottom="true"
+		    />
+    </RelativeLayout>
+    
+	<android.support.v4.widget.SwipeRefreshLayout
+	    android:layout_weight="1"
+	    android:id="@+id/swipe_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp">
+		
+		<com.oneggo.snacks.view.BrowserView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/webView"/>
+	</android.support.v4.widget.SwipeRefreshLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/browserControl"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/v1_browser_ctl"
+	    android:layout_gravity="center_horizontal|bottom"
+	    >
+	    
+	    <View 
+	        android:id="@+id/line"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="#E6E8E9"
+	        android:layout_alignParentTop="true"
+	        />
+	    
+	    <LinearLayout 
+	        android:layout_below="@+id/line"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:orientation="horizontal">
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="32dp"
+		        android:id="@+id/previous"
+		        android:layout_weight="1"
+		        android:src="@drawable/browser_back"
+		        android:contentDescription="@null"
+		        />
+		    
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="32dp"
+		        android:layout_weight="1"
+		        android:id="@+id/next"
+		        android:src="@drawable/browser_forword"
+		        android:contentDescription="@null"
+		        />
+		        
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="32dp"
+		        android:layout_weight="1"
+		        android:id="@+id/browser"
+		        android:src="@drawable/browser"
+		        android:contentDescription="@null"
+		        />
+		    
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="32dp"
+		        android:layout_weight="1"
+		        android:id="@+id/refresh"
+		        android:src="@drawable/browser_refresh"
+		        android:contentDescription="@null"
+		        />
+	    </LinearLayout>
+	</RelativeLayout>    
+</LinearLayout>

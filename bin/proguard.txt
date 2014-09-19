@@ -1,0 +1,220 @@
+# view res/layout/view_main_head.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_browser.xml #generated:56
+# view res/layout/activity_feedback.xml #generated:96
+# view res/layout/activity_like.xml #generated:35
+# view res/layout/activity_subject.xml #generated:34
+# view res/layout/fragment_product.xml #generated:1
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class cn.jpush.android.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:201
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:187
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class cn.jpush.android.ui.PushActivity { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:44
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:27
+# view res/layout/abs__screen_simple.xml #generated:32
+# view res/layout/abs__screen_simple_overlay_action_mode.xml #generated:27
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:44
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:25
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout { <init>(...); }
+
+# view large\res/layout-large/abs__action_mode_close_item.xml #generated:17
+# view res/layout/abs__action_mode_close_item.xml #generated:17
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abs__action_menu_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abs__popup_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:27
+# view res/layout/abs__screen_action_bar.xml #generated:51
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:30
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:53
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:27
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:28
+-keep class com.actionbarsherlock.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abs__action_mode_bar.xml #generated:19
+# view res/layout/abs__screen_action_bar.xml #generated:37
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:41
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:37
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:38
+-keep class com.actionbarsherlock.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:32
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:36
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:32
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:33
+-keep class com.actionbarsherlock.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abs__action_bar_home.xml #generated:17
+-keep class com.actionbarsherlock.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:40
+-keep class com.actionbarsherlock.internal.widget.CapitalizingButton { <init>(...); }
+
+# view res/layout/abs__activity_chooser_view.xml #generated:19
+-keep class com.actionbarsherlock.internal.widget.IcsLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_bar_tab.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abs__action_bar_tab_bar_view.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.TabsLinearLayout { <init>(...); }
+
+# view res/layout/abs__search_view.xml #generated:84
+-keep class com.actionbarsherlock.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/activity_setcolor.xml #generated:33
+-keep class com.etsy.android.grid.StaggeredGridView { <init>(...); }
+
+# view res/layout/list_item_color.xml #generated:10
+-keep class com.etsy.android.grid.util.DynamicHeightTextView { <init>(...); }
+
+# view res/layout/activity_like.xml #generated:42
+-keep class com.fortysevendeg.swipelistview.SwipeListView { <init>(...); }
+
+# view res/layout/umeng_socialize_comment_detail.xml #generated:23
+-keep class com.google.android.maps.MapView { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.oneggo.snacks.AppData { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.oneggo.snacks.dao.CategoriesProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.oneggo.snacks.dao.ProductsProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.oneggo.snacks.extend.AppWall { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.oneggo.snacks.receiver.DownLoadReceive { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class com.oneggo.snacks.receiver.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.oneggo.snacks.ui.AboutUsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.oneggo.snacks.ui.BrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.oneggo.snacks.ui.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.oneggo.snacks.ui.ForgetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.oneggo.snacks.ui.LikeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.oneggo.snacks.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.oneggo.snacks.ui.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.oneggo.snacks.ui.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.oneggo.snacks.ui.PushContentSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.oneggo.snacks.ui.PushKeywordSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.oneggo.snacks.ui.PushSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.oneggo.snacks.ui.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.oneggo.snacks.ui.ResetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.oneggo.snacks.ui.SetColorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.oneggo.snacks.ui.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.oneggo.snacks.ui.SubjectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.oneggo.snacks.ui.UsernameSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.oneggo.snacks.ui.VerifyActivity { <init>(...); }
+
+# view res/layout/activity_browser.xml #generated:62
+-keep class com.oneggo.snacks.view.BrowserView { <init>(...); }
+
+# view res/layout/fragment_person.xml #generated:62
+# view res/layout/listitem_msg_left.xml #generated:28
+# view res/layout/listitem_msg_right.xml #generated:31
+-keep class com.oneggo.snacks.view.CustomImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.tencent.plus.ImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
+
+# view res/layout/umeng_socialize_post_share.xml #generated:2
+# view sw550dp-large\res/layout-sw550dp-large/umeng_socialize_post_share.xml #generated:2
+-keep class com.umeng.socialize.view.wigets.KeyboardListenRelativeLayout { <init>(...); }
+
+# view res/layout/umeng_socialize_comment_view.xml #generated:30
+-keep class com.umeng.socialize.view.wigets.PullToRefreshListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:21
+-keep class com.umeng.socialize.view.wigets.SearchBox { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:38
+-keep class com.umeng.socialize.view.wigets.SectionListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:47
+-keep class com.umeng.socialize.view.wigets.SlideBar { <init>(...); }
+
+# view res/layout/umeng_socialize_ucenter_platform_item.xml #generated:31
+-keep class com.umeng.socialize.view.wigets.SwitchImageView { <init>(...); }
+
+# view res/layout/swipeback_layout.xml #generated:2
+-keep class me.imid.swipebacklayout.lib.SwipeBackLayout { <init>(...); }
+
+# onClick res/layout/activity_pushsetting.xml #generated:136
+-keepclassmembers class * { *** pushContentSetting(...); }
+
+# onClick res/layout/activity_pushsetting.xml #generated:168
+-keepclassmembers class * { *** pushKeywordSetting(...); }
+

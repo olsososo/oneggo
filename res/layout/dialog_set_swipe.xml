@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/white_shape_dialog"
+    android:padding="20dp">
+    
+		<RadioGroup 
+		    android:id="@+id/edge_flag"
+		    android:orientation="vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    <RadioButton 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:id="@+id/left"
+				android:checked="true"
+				android:text="@string/swipe_left"
+				android:textColor="@color/v1_hint"
+				android:paddingLeft="10dp"
+				android:textSize="16sp"
+		        />
+		    
+		    <RadioButton 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/right"
+		        android:text="@string/swipe_right"
+		        android:textColor="@color/v1_hint"
+		        android:paddingLeft="10dp"
+		        android:textSize="16sp"
+		        />
+		    
+		    <RadioButton 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/bottom"
+		        android:text="@string/swipe_botton"
+		        android:textColor="@color/v1_hint"
+		        android:paddingLeft="10dp"
+		        android:textSize="16sp"
+		        />
+		    
+		    <RadioButton 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/all"
+		        android:text="@string/swipe_all"
+		        android:textColor="@color/v1_hint"
+		        android:paddingLeft="10dp"
+		        android:textSize="16sp"
+		        />
+		</RadioGroup>    
+</LinearLayout>

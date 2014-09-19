@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout 
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:background="@color/v1_actionbar" 
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+	    
+		<ImageView 
+		    android:layout_width="32dip"
+		    android:layout_height="32dip"
+		    android:id="@+id/list_icon"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/list"
+		    android:layout_marginLeft="15dp"
+		    android:contentDescription="@null"
+		    />
+		
+		<ImageView 
+		    android:layout_width="32dip"
+		    android:layout_height="32dip"
+		    android:id="@+id/person_icon"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:src="@drawable/person"
+		    android:layout_marginRight="15dp"
+		    android:contentDescription="@null"
+		    />
+		
+		<Spinner 
+		    android:id="@+id/selector"
+		    android:dropDownSelector="@color/white"
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    /> 
+	</RelativeLayout>
+
+   
+	<FrameLayout
+    	android:id="@+id/content_frame"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/v1_login_background"/>    
+</LinearLayout>

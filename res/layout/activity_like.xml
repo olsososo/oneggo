@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+         
+    <RelativeLayout 
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:background="@color/v1_actionbar" 
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <Button 
+            android:id="@+id/back" 
+            android:layout_centerVertical="true" 
+            android:layout_marginLeft="@dimen/menu_margin_left" 
+            android:textSize="@dimen/menu_back_text" 
+            android:textColor="@color/v1_menu_back_text"  
+            android:background="@drawable/selector_btn_back" 
+            android:layout_width="@dimen/menu_back_width" 
+            android:layout_height="@dimen/menu_back_height" 
+            android:text="@string/back" />
+        <TextView 
+            android:layout_centerInParent="true" 
+            android:textSize="@dimen/menu_title" 
+            android:textColor="@color/v1_menu_title"  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/favorites" />
+   </RelativeLayout>
+   
+   	<android.support.v4.widget.SwipeRefreshLayout
+	    android:id="@+id/swipe_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+			<com.fortysevendeg.swipelistview.SwipeListView 
+			    android:id="@+id/listView"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#e2e2e2"
+			    android:clipToPadding="false"
+			    android:divider="@null"
+			    android:dividerHeight="1dp"
+			    android:fadingEdge="none"
+			    android:scrollbarStyle="outsideOverlay" 
+		        swipe:swipeFrontView="@+id/front"
+		        swipe:swipeBackView="@+id/back"
+		        swipe:swipeCloseAllItemsWhenMoveList="true"
+		        swipe:swipeMode="both"/>
+		
+			<ScrollView
+			    android:id="@+id/showEmptyMessage"
+	    		android:layout_width="match_parent"
+	    		android:layout_height="wrap_content">
+				<LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center_horizontal"
+				    android:orientation="vertical">
+				    <ImageView
+				        android:contentDescription="@null"
+				        android:layout_width="100dp"
+				        android:layout_height="100dp"
+				        android:src="@drawable/try_refresh"/>
+				    
+				    <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textSize="16sp"
+				        android:textColor="#575757"
+				        android:text="@string/favorites_aimaya"
+				        />
+				    
+				    <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textSize="16sp"
+				        android:textColor="#575757"
+				        android:text="@string/favorites_go"
+				        />
+				    <ImageView 
+				        android:contentDescription="@null"
+				        android:layout_width="200dp"
+				        android:layout_height="200dp"
+				        android:src="@drawable/empty"
+				        />
+				</LinearLayout>
+			</ScrollView>
+		</FrameLayout>
+	</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

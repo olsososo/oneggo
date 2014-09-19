@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:background="@color/v1_actionbar" 
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <Button 
+            android:id="@+id/back" 
+            android:layout_centerVertical="true" 
+            android:layout_marginLeft="@dimen/menu_margin_left" 
+            android:textSize="@dimen/menu_back_text" 
+            android:textColor="@color/v1_menu_back_text"  
+            android:background="@drawable/selector_btn_back" 
+            android:layout_width="@dimen/menu_back_width" 
+            android:layout_height="@dimen/menu_back_height" 
+            android:text="@string/back" />
+        <TextView 
+            android:layout_centerInParent="true" 
+            android:textSize="@dimen/menu_title" 
+            android:textColor="@color/v1_menu_title"  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/push_keyword_setting" />
+   </RelativeLayout>
+   
+    <LinearLayout 
+        android:id="@+id/keywordList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+	    android:layout_marginLeft="@dimen/input_margin_left"
+	    android:layout_marginRight="@dimen/input_margin_right"
+	    android:layout_marginTop="@dimen/input_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v1_login_input_bg" >
+		<EditText 
+		    android:layout_weight="1"
+		    android:id="@+id/keyword"
+		    android:paddingLeft="10dp"
+		    android:layout_width="0dp"
+		    android:layout_height="45dp"
+		    android:layout_margin="2dip"
+		    android:hint="@string/enter_keyword"
+		    android:textColor="@color/v1_login_hint"
+		    android:gravity="center_vertical"
+		    android:layout_gravity="left|center_vertical"
+		    android:background="@color/white"
+		    /> 
+		    
+		<ImageView 
+		    android:id="@+id/addKeyword"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/add"
+		    android:layout_gravity="right|center_vertical"
+		    android:paddingRight="20dp"
+		    android:contentDescription="@null"/>
+    </LinearLayout>
+
+</LinearLayout>
